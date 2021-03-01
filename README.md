@@ -28,7 +28,8 @@ Tout simplement
 
 ## Installer le script
 
-```git clone https://github.com/CyrilleBiot/primtux-perte-mot-de-passe-ctparental.git
+```
+git clone https://github.com/CyrilleBiot/primtux-perte-mot-de-passe-ctparental.git
 cd primtux-perte-mot-de-passe-ctparental
 sudo bash perte-mot-de-passe-ctparental.sh <LOGIN> <MOT DE PASSE>```
 
