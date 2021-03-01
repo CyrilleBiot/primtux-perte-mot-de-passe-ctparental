@@ -1,7 +1,7 @@
 # primtux-perte-mot-de-passe-ctparental
 
 ## Késako
-Juste un petit script bash pour les CTICES qui configurent un primtux et oublient le mot de passe du contrôle parental ;), lol.
+Juste un petit script bash pour les CTICE / ERUN qui configurent un primtux et oublient le mot de passe du contrôle parental ;), lol.
 
 ## Comment ça marche ?
 Par défaut le mot de passe est stocké dans /var/www/CTadmin/arp1_md5.password.
