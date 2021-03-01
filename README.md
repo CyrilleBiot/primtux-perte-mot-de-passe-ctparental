@@ -24,11 +24,11 @@ Et c'est tout ;)
 ## Restaurer le fichier original
 Tout simplement 
 
- ```sudo mv /var/www/CTadmin/arp1_md5.password.BACKUP /var/www/CTadmin/arp1_md5.password ```
+```sudo mv /var/www/CTadmin/arp1_md5.password.BACKUP /var/www/CTadmin/arp1_md5.password ```
 
 ## Installer le script
 
 ```git clone https://github.com/CyrilleBiot/primtux-perte-mot-de-passe-ctparental.git
 cd primtux-perte-mot-de-passe-ctparental
-sudo bash perte-mot-de-passe-ctparental.sh <LOGIN> <MOT DE PASSE> ```
+sudo bash perte-mot-de-passe-ctparental.sh <LOGIN> <MOT DE PASSE>```
 
