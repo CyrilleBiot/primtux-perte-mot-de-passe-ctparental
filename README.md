@@ -31,5 +31,6 @@ Tout simplement
 ```
 git clone https://github.com/CyrilleBiot/primtux-perte-mot-de-passe-ctparental.git
 cd primtux-perte-mot-de-passe-ctparental
-sudo bash perte-mot-de-passe-ctparental.sh <LOGIN> <MOT DE PASSE>```
+sudo bash perte-mot-de-passe-ctparental.sh <LOGIN> <MOT DE PASSE>
+```
 
