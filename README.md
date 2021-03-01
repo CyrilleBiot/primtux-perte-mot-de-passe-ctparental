@@ -4,7 +4,7 @@
 Juste un petit script bash pour les CTICE / ERUN qui configurent un primtux et oublient le mot de passe du contrôle parental ;), lol.
 
 ## Comment ça marche ?
-Par défaut le mot de passe est stocké dans /var/www/CTadmin/arp1_md5.password.
+Par défaut le mot de passe est stocké dans */var/www/CTadmin/arp1_md5.password*.
 
 Ce script fait un backup du fichier original en cas de soucis.
 
