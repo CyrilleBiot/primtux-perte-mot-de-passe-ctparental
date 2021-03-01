@@ -1,6 +1,6 @@
 # primtux-perte-mot-de-passe-ctparental
 
-## Késako
+## Késako
 Juste un petit script bash pour les CTICES qui configurent un primtux et oublient le mot de passe du contrôle parental ;), lol.
 
 ## Comment ça marche ?
