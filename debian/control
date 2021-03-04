@@ -1,11 +1,11 @@
-Source: primtux-perte-mot-de-passe-ctparental
+Source: primtux-password-ctparental-change
 Section: utils
 Priority: extra
 Maintainer: Cyrille Biot <cyrille@cbiot.fr>
 Build-Depends: debhelper (>= 9)
 Homepage: https://github.com/CyrilleBiot/primtux-perte-mot-de-passe-ctparental
 
-Package: primtux-perte-mot-de-passe-ctparental
+Package: primtux-password-ctparental-change
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}, python3, python3-gi
 Homepage: https://github.com/CyrilleBiot/primtux-perte-mot-de-passe-ctparental

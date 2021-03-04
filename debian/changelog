@@ -1,5 +1,5 @@
-primtux-perte-mot-de-passe-ctparental (1.0) unstable; urgency=medium
+primtux-password-ctparental-change (1.0) unstable; urgency=medium
 
   * Initial release. (Closes: #XXXXXX)
 
- -- Cyrille Biot <cyrille@cbiot.fr>  Thu, 04 Mar 2021 14:01:58 +0100
+ -- Cyrille Biot <cyrille@cbiot.fr>  Thu, 04 Mar 2021 14:11:10 +0100
