@@ -20,13 +20,13 @@ from gi.repository import Gtk, Gdk
 
 class chgCtpPassword(Gtk.Window):
     def __init__(self):
-        Gtk.Window.__init__(self, title="Python CPU Limit")
+        Gtk.Window.__init__(self, title="Primtux Changement Administeur CTparental")
 
         if os.path.exists('.git'):
             self.pathDir = "./"
         # Launch since a deb package install
         else:
-            self.pathDir = "/usr/share/pycpulimit/"
+            self.pathDir = "/usr/share/primtux-password-ctparental-change/"
 
         self.set_border_width(10)
         self.set_resizable(False)
