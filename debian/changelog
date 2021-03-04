@@ -1,5 +1,11 @@
+primtux-password-ctparental-change (1.1) UNRELEASED; urgency=medium
+
+  * Fix bugs
+
+ -- Cyrille Biot <cyrille@cbiot.fr>  Thu, 04 Mar 2021 14:26:39 +0100
+
 primtux-password-ctparental-change (1.0) unstable; urgency=medium
 
   * Initial release. (Closes: #XXXXXX)
 
- -- Cyrille Biot <cyrille@cbiot.fr>  Thu, 04 Mar 2021 14:11:10 +0100
+ -- Cyrille Biot <cyrille@cbiot.fr>  Thu, 04 Mar 2021 14:25:48 +0100
