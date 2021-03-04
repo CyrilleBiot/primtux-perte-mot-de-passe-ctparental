@@ -6,7 +6,7 @@ __author__ = "Cyrille BIOT <cyrille@cbiot.fr>"
 __copyright__ = "Copyleft"
 __credits__ = "Cyrille BIOT <cyrille@cbiot.fr>"
 __license__ = "GPL"
-__version__ = "1.6"
+__version__ = "1.0"
 __date__ = "2021/03/03"
 __maintainer__ = "Cyrille BIOT <cyrille@cbiot.fr>"
 __email__ = "cyrille@cbiot.fr"
@@ -41,15 +41,20 @@ class chgCtpPassword(Gtk.Window):
 
         # Set Entry Widget to the Password
         entryPwd1 = Gtk.Entry()
-        entryPwd1.set_text("Ici le mot de passe")
+        entryPwd1.set_visibility(False)
         entryPwd1.set_width_chars(50)
         entryPwd1.set_editable(True)
 
+        labelPwd1 = Gtk.Label(label="Mot de passe :")
+
         # Set Entry Widget to the Password
         entryPwd2 = Gtk.Entry()
-        entryPwd2.set_text("De nouveau le mot de passe pour vérification.")
+        entryPwd2.set_visibility(False)
         entryPwd2.set_width_chars(50)
         entryPwd2.set_editable(True)
+
+        labelPwd2 = Gtk.Label(label="Confirmer mot de passe :")
+
 
         # Set Button to Validate
         btnValidate = Gtk.Button(label="Générer Nouvelle association login / mot de passe")
@@ -70,9 +75,11 @@ class chgCtpPassword(Gtk.Window):
         #grid.set_row_homogeneous(False)
         grid.attach(entryLogin, 0, 0, 1, 1)
         grid.attach(lblInfo,0,1,1,1)
-        grid.attach(entryPwd1, 0, 2, 1, 1)
-        grid.attach(entryPwd2, 0, 3, 1, 1)
-        grid.attach(btnValidate,0,4,1,1)
+        grid.attach(labelPwd1,0,2,1,1)
+        grid.attach(entryPwd1, 1, 2, 1, 1)
+        grid.attach(labelPwd2,0,3,1,1)
+        grid.attach(entryPwd2, 1, 3, 1, 1)
+        grid.attach(btnValidate,0,4,2,1)
 
         self.add(grid)
 
@@ -148,7 +155,7 @@ class chgCtpPassword(Gtk.Window):
         dialog = Gtk.MessageDialog(
             transient_for=self,
             flags=0,
-            message_type=Gtk.MessageType.ERROR,
+            message_type=Gtk.MessageType.INFO,
             buttons=Gtk.ButtonsType.OK,
             text=message1,
         )
