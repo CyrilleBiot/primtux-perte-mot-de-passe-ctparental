@@ -20,13 +20,13 @@ from gi.repository import Gtk, Gdk
 
 class chgCtpPassword(Gtk.Window):
     def __init__(self):
-        Gtk.Window.__init__(self, title="Primtux Changement Administeur CTparental")
+        Gtk.Window.__init__(self, title="Python CPU Limit")
 
         if os.path.exists('.git'):
             self.pathDir = "./"
         # Launch since a deb package install
         else:
-            self.pathDir = "/usr/share/primtux-password-ctparental-change/"
+            self.pathDir = "/usr/share/pycpulimit/"
 
         self.set_border_width(10)
         self.set_resizable(False)
@@ -109,10 +109,12 @@ class chgCtpPassword(Gtk.Window):
         elif not any(char in SpecialSym for char in password1):
             self.warning_alert(self, "Attention", "Le mot de passe doit contenir au moins 1 caractère spcécial.")
         else:
-            self.warning_alert(self,"Nickel", "Le mot de passe est conforme aux attentes.")
+            self.warning_OK(self,"Nickel", "Le mot de passe est conforme aux attentes. Cliquer sur OK/VALIDER.")
             # On lance la modification du mot de passe.
-            cmd_shell = "sudo CTparental -setadmin " + login + " "  + password2
+            cmd_shell = "sudo CTparental -setadmin " + login + " "  + password2 + "&> /dev/null"
             os.system(cmd_shell)
+            self.warning_OK(self,"Nickel", "Le couple <LOGIN> / <MOT DE PASSE> a été mise à jour.")
+
 
     def gtk_style(self):
         style_provider = Gtk.CssProvider()
@@ -134,6 +136,28 @@ class chgCtpPassword(Gtk.Window):
         dialog.format_secondary_text(message2)
         dialog.run()
         dialog.destroy()
+
+    def warning_OK(self, widget, message1, message2):
+        """
+        FOnction ouvrant une dialog box d'alerte
+        :param widget:
+        :param message1: Le titre du message
+        :param message2: Le contenu du message
+        :return:
+        """
+        dialog = Gtk.MessageDialog(
+            transient_for=self,
+            flags=0,
+            message_type=Gtk.MessageType.ERROR,
+            buttons=Gtk.ButtonsType.OK,
+            text=message1,
+        )
+        dialog.format_secondary_text(message2)
+        dialog.run()
+        dialog.destroy()
+
+
+
 
 win = chgCtpPassword()
 win.connect("destroy", Gtk.main_quit)
