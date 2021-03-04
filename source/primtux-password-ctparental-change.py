@@ -118,7 +118,7 @@ class chgCtpPassword(Gtk.Window):
         else:
             self.warning_OK(self,"Nickel", "Le mot de passe est conforme aux attentes. Cliquer sur OK/VALIDER.")
             # On lance la modification du mot de passe.
-            cmd_shell = "sudo CTparental -setadmin " + login + " "  + password2 + "&> /dev/null"
+            cmd_shell = "sudo CTparental -setadmin " + login + " "  + password2 + " &> /dev/null"
             os.system(cmd_shell)
             self.warning_OK(self,"Nickel", "Le couple <LOGIN> / <MOT DE PASSE> a été mis à jour.")
 
