@@ -6,7 +6,7 @@ __author__ = "Cyrille BIOT <cyrille@cbiot.fr>"
 __copyright__ = "Copyleft"
 __credits__ = "Cyrille BIOT <cyrille@cbiot.fr>"
 __license__ = "GPL"
-__version__ = "1.0"
+__version__ = "1.6"
 __date__ = "2021/03/03"
 __maintainer__ = "Cyrille BIOT <cyrille@cbiot.fr>"
 __email__ = "cyrille@cbiot.fr"
@@ -20,13 +20,13 @@ from gi.repository import Gtk, Gdk
 
 class chgCtpPassword(Gtk.Window):
     def __init__(self):
-        Gtk.Window.__init__(self, title="Python CPU Limit")
+        Gtk.Window.__init__(self, title="Primtux. Réinitialiser Compte Administration CTparental")
 
         if os.path.exists('.git'):
             self.pathDir = "./"
         # Launch since a deb package install
         else:
-            self.pathDir = "/usr/share/pycpulimit/"
+            self.pathDir = "/usr/share/primtux-password-ctparental-change/"
 
         self.set_border_width(10)
         self.set_resizable(False)
@@ -113,7 +113,7 @@ class chgCtpPassword(Gtk.Window):
             # On lance la modification du mot de passe.
             cmd_shell = "sudo CTparental -setadmin " + login + " "  + password2 + "&> /dev/null"
             os.system(cmd_shell)
-            self.warning_OK(self,"Nickel", "Le couple <LOGIN> / <MOT DE PASSE> a été mise à jour.")
+            self.warning_OK(self,"Nickel", "Le couple <LOGIN> / <MOT DE PASSE> a été mis à jour.")
 
 
     def gtk_style(self):
