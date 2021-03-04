@@ -1,7 +1,0 @@
-#!/bin/bash
-echo "-----------------------------------------------------------------------"
-echo "Delete sym links"
-rm -f  /usr/bin/primtux-password-ctparental-change
-echo "Symbolic links deleted."
-echo "-----------------------------------------------------------------------"
-exit 0
