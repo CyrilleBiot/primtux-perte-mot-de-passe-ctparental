@@ -1,6 +1,0 @@
-administrateur ALL= NOPASSWD: /usr/bin/primtux-perte-mot-de-passe-ctparental
-
-
-lien symbolique
-
-ln -sf /home/administrateur/primtux-perte-mot-de-passe-ctparental/perte-mot-de-passe-ctparental.py /usr/bin/cyrille

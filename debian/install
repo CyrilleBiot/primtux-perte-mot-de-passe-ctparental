@@ -1,0 +1,4 @@
+source/apropos.png /usr/share/primtux-perte-mot-de-passe-ctparental/
+source/primtux-password-ctparental-change.py /usr/share/primtux-perte-mot-de-passe-ctparental/
+source/style.css /usr/share/primtux-perte-mot-de-passe-ctparental/
+source/99.primtux-password-ctparental-change /etc/sudoers.d/
